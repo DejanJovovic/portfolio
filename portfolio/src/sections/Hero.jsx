@@ -5,6 +5,10 @@ import {Suspense} from "react";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
+import Target from "../components/Target.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
+import Cube from "../components/Cube.jsx";
+import Rings from "../components/Rings.jsx";
 
 const Hero = () => {
 
@@ -35,6 +39,14 @@ const Hero = () => {
                         position={sizes.deskPosition}
                         rotation={[0, -Math.PI, 0]}
                         scale={sizes.deskScale}/>
+                        {/*a new component rendered here*/}
+                        <group>
+                            {/*coming from index.js/ calculation for different screen sizes*/}
+                            <Target position={sizes.targetPosition}/>
+                            <ReactLogo position={sizes.reactLogoPosition}/>
+                            <Cube position={sizes.cubePosition}/>
+                            <Rings position={sizes.ringPosition}/>
+                        </group>
                         <ambientLight intensity={1}/>
                         <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
