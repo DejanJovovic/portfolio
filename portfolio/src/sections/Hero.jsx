@@ -9,6 +9,8 @@ import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
 import Cube from "../components/Cube.jsx";
 import Rings from "../components/Rings.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
 
@@ -35,10 +37,13 @@ const Hero = () => {
                     {/*a camera like a human eye*/}
                     <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
                         {/*-Math.Pi /2 is used to rotate model clockvize by 90 degrees*/}
-                    <HackerRoom
-                        position={sizes.deskPosition}
-                        rotation={[0, -Math.PI, 0]}
-                        scale={sizes.deskScale}/>
+
+                        <HeroCamera isMobile={isMobile}>
+                            <HackerRoom
+                                position={sizes.deskPosition}
+                                rotation={[0, -Math.PI, 0]}
+                                scale={sizes.deskScale}/>
+                        </HeroCamera>
                         {/*a new component rendered here*/}
                         <group>
                             {/*coming from index.js/ calculation for different screen sizes*/}
@@ -51,6 +56,12 @@ const Hero = () => {
                         <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
                 </Canvas>
+            </div>
+
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                <a href="#contact" className="w-fit">
+                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+                </a>
             </div>
 
         </section>
