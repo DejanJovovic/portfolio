@@ -167,8 +167,8 @@ export const myProjects = [
     },
     {
         title: 'StarCardApp-Loyalty',
-        desc: 'Coming soon...',
-        subdesc: '',
+        desc: 'Coming soon',
+        subdesc: '...',
         href: 'https://www.not_deployed',
         // i have to add my own video
         texture: '/textures/project/project5.mp4',
