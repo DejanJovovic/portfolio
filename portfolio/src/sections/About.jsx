@@ -23,13 +23,15 @@ const About = () => {
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="/assets/slika-grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+                        <img src="/assets/slika-grid1.png" alt="grid-1"
+                             className="w-full sm:h-[276px] h-fit object-contain"/>
 
                         <div>
                             <p className="grid-headtext">Hi, I’m Dejan Jovović</p>
                             <p className="grid-subtext">
                                 {/*should be changed*/}
-                                With 2 years of experience, I have honed my skills in creating native applications for both web and mobile,
+                                With 2 years of experience, I have honed my skills in creating native applications for
+                                both web and mobile,
                                 as well as frontend dev.
                             </p>
                         </div>
@@ -39,11 +41,12 @@ const About = () => {
                     <div className="grid-container">
                         {/*i need to change the image and add mine*/}
                         <img src="/assets/grid2.png" alt="grid-2"
-                             className="w-full sm:h-[276px] h-fit object-contain" />
+                             className="w-full sm:h-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             {/*should be changed probably*/}
-                            <p className="grid-subtext">I specialize in building native applications with JavaScript/TypeScript in React Native.</p>
+                            <p className="grid-subtext">I specialize in building native applications with
+                                JavaScript/TypeScript in React Native.</p>
                         </div>
                     </div>
                 </div>
@@ -52,44 +55,47 @@ const About = () => {
                         <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
                             {/*from react-globe.gl*/}
                             <Globe
-                            height={326}
-                            width={326}
-                            backgroundColor="rgba(0, 0, 0, 0)"
-                            backgroundImageOpacity={0.5}
-                            showAtmosphere
-                            showGraticules
-                            globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                            bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                            // can be removed if i dont want to share my location
-                            labelsData={[{
-                                lat: 40, lng: -100,
-                                text: "I'm here!",
-                                color: 'white',
-                                size: 20,
-                            }]}/>
+                                height={326}
+                                width={326}
+                                backgroundColor="rgba(0, 0, 0, 0)"
+                                backgroundImageOpacity={0.5}
+                                showAtmosphere
+                                showGraticules
+                                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+                                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                                // can be removed if i dont want to share my location
+                                labelsData={[{
+                                    lat: 40, lng: -100,
+                                    text: "I'm here!",
+                                    color: 'white',
+                                    size: 20,
+                                }]}/>
 
                         </div>
                         <div>
                             <p className="grid-headtext">I work remotely across most timezones.</p>
                             <p className="grid-subtext">I'm based in Serbia, with remote work available.</p>
-                            <Button name="Contact me" isBeam containerClass="w-full mt-10"/>
+                            <a href="#contact">
+                                <Button name="Contact me" isBeam containerClass="w-full mt-10"/>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div className="xl:col-span-2 xl:row-span-3">
                     <div className="grid-container">
                         <img src="/assets/grid3.png" alt="grid-3"
-                        className="w-full sm:h-[266px] h-fit object-contain"/>
+                             className="w-full sm:h-[266px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">My Passion for Coding</p>
-                            <p className="grid-subtext">I love creating and designing new solutions, where my focus is on every little detail. I wouldn't call coding my profession, but rather my passion.</p>
+                            <p className="grid-subtext">I love creating and designing new solutions, where my focus is
+                                on every little detail. I wouldn't call coding my profession, but rather my passion.</p>
                         </div>
                     </div>
                 </div>
                 <div className="xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
                         <img src="/assets/grid4.png" alt="grid-4"
-                        className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"/>
+                             className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"/>
                         <div className="space-y-2">
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
