@@ -161,7 +161,7 @@ export const myProjects = [
             {
                 id: 3,
                 name: 'Firebase',
-                path: '/assets/Firebase_logo.png',
+                path: '/assets/Firebase_Logo.png',
             },
         ],
     },
