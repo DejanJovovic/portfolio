@@ -15,10 +15,6 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="social-icon">
-                    <img src="/assets/instagram.svg" alt="instagram"
-                         className="w-1/2 h-1/2"/>
-                </div>
-                <div className="social-icon">
                     <a href="https://www.linkedin.com/in/dejan-jovovic/" target="_blank" rel="noreferrer">
                         <img src="/assets/LinkedIn_logo.png" alt="linkedin"
                              className="w-1/2 h-1/2 ml-2.5"/>
