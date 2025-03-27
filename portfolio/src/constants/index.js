@@ -215,18 +215,19 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'Sotex Solutions',
-        pos: 'Internship Android Developer',
-        duration: 'Sep 2023 - Nov 2023',
-        title: "Worked on an android internship project related to electricity consumption using graphs in Kotlin.",
-        animation: 'victory',
-    },
-    {
-        id: 2,
         name: 'GoSmartDevelopment',
         pos: 'Junior Software Developer',
         duration: '2025 - Present',
         title: "...",
         animation: 'clapping',
     },
+    {
+        id: 2,
+        name: 'Sotex Solutions',
+        pos: 'Internship Android Developer',
+        duration: 'Sep 2023 - Nov 2023',
+        title: "Worked on an android internship project related to electricity consumption using graphs in Kotlin.",
+        animation: 'victory',
+    },
 ];
+

@@ -1,5 +1,4 @@
 import React from 'react'
-import {Canvas} from "@react-three/fiber";
 import {workExperiences} from "../constants/index.js";
 
 const Experience = () => {
@@ -9,15 +8,9 @@ const Experience = () => {
                 <h3 className="head-text">My Work Experience</h3>
 
                 <div className="work-container">
-                    <div className="work-canvas">
-                        <Canvas>
-
-                        </Canvas>
-                    </div>
-
                     <div className="work-content">
                         <div className="sm:py-10 py-5 sm:px-5 px-2.5">
-                            {workExperiences.map(({id, name, pos, duration, title, animation}) => (
+                            {workExperiences.map(({id, name, pos, duration, title}) => (
                                 <div key={id} class="work-content_container group">
                                     <div className="flex flex-col h-full justify-start items-center py-2">
                                         <div className="work-content_bar"/>
@@ -27,7 +20,7 @@ const Experience = () => {
                                         <p className="text-sm mb-5">{pos} -- {duration}</p>
                                         <p className="group-hover:text-white transition ease-in-out duration-500">{title}</p>
                                     </div>
-                            </div>
+                                </div>
                             ))}
                         </div>
                     </div>
