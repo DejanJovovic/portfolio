@@ -40,7 +40,7 @@ const About = () => {
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
                         {/*i need to change the image and add mine*/}
-                        <img src="/assets/grid2.png" alt="grid-2"
+                        <img src="/assets/languages.png" alt="languages"
                              className="w-full sm:h-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>

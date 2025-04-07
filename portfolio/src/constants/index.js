@@ -207,7 +207,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5.5, 0] : isTablet ? [7, -8, 0] : [9, -7, 0],
         reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [7, 1, 0] : [-12, 0, -1],
         //something doesn't work well with rings, should be checked
-        ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-5, 4, 0] : isTablet ? [-9, 1, 0] : [10, 0, 0],
+        ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-3, 3, 0] : isTablet ? [-9, 1, 0] : [10, 0, 0],
         targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-11, -7, -18] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
     };
 };
