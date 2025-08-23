@@ -30,9 +30,8 @@ const About = () => {
                             <p className="grid-headtext">Hi, I’m Dejan Jovović</p>
                             <p className="grid-subtext">
                                 {/*should be changed*/}
-                                With 2 years of experience, I have honed my skills in creating native applications for
-                                both web and mobile,
-                                as well as frontend dev.
+                                I am a mobile-focused developer with a strong passion for coding, specializing in
+                                building clean, user-friendly interfaces and maintainable applications.
                             </p>
                         </div>
                     </div>
@@ -45,8 +44,10 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             {/*should be changed probably*/}
-                            <p className="grid-subtext">I specialize in building native applications with
-                                JavaScript/TypeScript in React Native.</p>
+                            <p className="grid-subtext">I specialize in
+                                React Native, Flutter, and native Android development using Kotlin and Java. While
+                                my primary focus is mobile, I also have some experience in web development and
+                                can confidently take on full-stack projects.</p>
                         </div>
                     </div>
                 </div>

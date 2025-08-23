@@ -59,9 +59,9 @@ export const clientReviews = [
 export const myProjects = [
     {
         title: 'Android-quiz-application',
-        desc: 'Android-quiz-application is a mobile application for entertainment and testing the user\'s general knowledge.',
+        desc: 'A mobile application for entertainment and testing the user\'s general knowledge.',
         subdesc:
-            'It contains multiple games and allows users to be ranked according to their achievements. Multilingualism is also supported so that the application can be adapted to as many users as possible.',
+            'This application contains multiple games and allows users to be ranked according to their achievements. Multilingualism is also supported so that the application can be adapted to as many users as possible.',
         href: 'https://www.not_deployed',
         // i have to add my own video
         texture: '/textures/project/project1.mp4',
@@ -74,7 +74,7 @@ export const myProjects = [
             },
             {
                 id: 2,
-                name: 'Spring',
+                name: 'SpringBoot',
                 path: 'assets/spring_boot_logo.png',
             },
             {
@@ -86,9 +86,9 @@ export const myProjects = [
     },
     {
         title: 'BPS-FM-Mobile-App',
-        desc: ' Android internship project .',
+        desc: 'Android internship project related to electricity consumption with graphs using Rest API and Kotlin. ',
         subdesc:
-            'It is related to electricity consumption using graphs. This application provides authentication for the users, as well as monthly information on : revenue, service requests, carbon savings, energy savings and consumption.',
+            'This application provides authentication for the users, as well as monthly information on : revenue, service requests, carbon savings, energy savingsand consumption.',
         href: 'https://www.not_deployed',
         // i have to add my own video
         texture: '/textures/project/project2.mp4',
@@ -107,6 +107,80 @@ export const myProjects = [
         ],
     },
     {
+        title: 'PostInfoPortal',
+        desc: 'A cross-platform mobile news application built with React Native and Expo that provides access to posts from PostInfo.rs  using Wordpress REST API.',
+        subdesc:
+            'It’s main features are:  filtering posts by categories/subcategories, offline caching, favorite posts logic, advanced search, advanced date filters, sorting, push notifications with OneSignal, sharing posts, light/dark themes, and a clean modern UI with Nativewind. Test version live, Play Store release in progress.',
+        href: 'https://www.not_deployed',
+        // i have to add my own video
+        texture: '/textures/project/project2.mp4',
+        spotlight: '/assets/spotlight3.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React Native',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'WordPress API',
+                path: '/assets/wordpress.png',
+            },
+            {
+                id: 3,
+                name: 'TailwindCss/Nativewind',
+                path: '/assets/tailwindcss.png',
+            },
+            {
+                id: 4,
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
+            },
+            {
+                id: 5,
+                name: 'JavaScript',
+                path: '/assets/JavaScript_logo.png',
+            },
+        ],
+    },
+    {
+        title: 'StarCardApp-Loyalty',
+        desc: 'A cross-platform digital loyalty card application built with React Native and Expo, integrated with a PHP backend via REST API.',
+        subdesc:
+            'The app allows the users to scan QR codes in restaurants or shops to collect points, unlock discounts and rewards, and store all their loyalty cards  in a digital wallet. Currently under development.',
+        href: 'https://www.not_deployed',
+        // i have to add my own video
+        texture: '/textures/project/project2.mp4',
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React Native',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'Php',
+                path: '/assets/PHP_logo.png',
+            },
+            {
+                id: 3,
+                name: 'TailwindCss/Nativewind',
+                path: '/assets/tailwindcss.png',
+            },
+            {
+                id: 4,
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
+            },
+            {
+                id: 5,
+                name: 'JavaScript',
+                path: '/assets/JavaScript_logo.png',
+            },
+        ],
+    },
+    {
         title: 'ExpressDelivery',
         desc: 'ExpressDelivery is a React Native/Expo Demo Delivery application.',
         subdesc:
@@ -114,7 +188,7 @@ export const myProjects = [
         href: 'https://www.not_deployed',
         // i have to add my own video here
         texture: '/textures/project/project3.mp4',
-        spotlight: '/assets/spotlight3.png',
+        spotlight: '/assets/spotlight5.png',
         tags: [
             {
                 id: 1,
@@ -166,7 +240,7 @@ export const myProjects = [
         ],
     },
     {
-        title: 'StarCardApp-Loyalty',
+        title: 'StarCardApp-Scan',
         desc: 'Coming soon',
         subdesc: '...',
         href: 'https://www.not_deployed',
@@ -182,18 +256,28 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
+                name: 'React Native',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
                 name: 'Php',
                 path: '/assets/PHP_logo.png',
             },
             {
-                id: 2,
-                name: 'React Native',
-                path: 'assets/react.svg',
+                id: 3,
+                name: 'TailwindCss/Nativewind',
+                path: '/assets/tailwindcss.png',
             },
             {
-                id: 3,
+                id: 4,
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
+            },
+            {
+                id: 5,
+                name: 'JavaScript',
+                path: '/assets/JavaScript_logo.png',
             },
 
         ],
@@ -216,8 +300,8 @@ export const workExperiences = [
     {
         id: 1,
         name: 'GoSmartDevelopment',
-        pos: 'Junior Software Developer',
-        duration: '2025 - Present',
+        pos: 'Junior Mobile Developer',
+        duration: 'Mar 2025 - Present',
         title: "...",
         animation: 'clapping',
     },
@@ -226,7 +310,7 @@ export const workExperiences = [
         name: 'Sotex Solutions',
         pos: 'Internship Android Developer',
         duration: 'Sep 2023 - Nov 2023',
-        title: "Worked on an android internship project related to electricity consumption using graphs in Kotlin.",
+        title: "Worked onan android internship project related to electricity consumption with graphs using Rest API and Kotlin.",
         animation: 'victory',
     },
 ];

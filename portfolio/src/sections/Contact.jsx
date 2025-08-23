@@ -55,9 +55,9 @@ const Contact = () => {
                      className="absolute inset-0 min-h-screen"/>
                 <div className="contact-container">
                     <h3 className="head-text mt-5">Let's talk</h3>
-                    <p className="text-lg text-white-600 mt-3">Whether you are looking to build a new mobile
-                        application, or perhaps a web application, improve your existing platform, or bring a new
-                        project to life, I am here to help.</p>
+                    {/*<p className="text-lg text-white-600 mt-3">Whether you are looking to build a new mobile*/}
+                    {/*    application, or perhaps a web application, improve your existing platform, or bring a new*/}
+                    {/*    project to life, I am here to help.</p>*/}
                     <form ref={formRef} onSubmit={handleSubmit}
                           className="mt-12 flex flex-col space-y-7">
                         <label className="space-y-3">
