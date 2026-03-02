@@ -1,30 +1,43 @@
-import React, {useRef} from 'react'
-import {useGLTF} from "@react-three/drei";
+import React, { useRef } from 'react';
 import gsap from 'gsap';
-import {useGSAP} from "@gsap/react";
+import { useGSAP } from '@gsap/react';
 
-// rendering 3d model from scratch, mesh from scratch
+// Lightweight local target built from primitives to avoid external model fetch failures.
 const Target = (props) => {
-
     const targetRef = useRef();
-    const {scene} = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf');
 
     useGSAP(() => {
-       gsap.to(targetRef.current.position, {
-          // move it 0.5 above
-           y: targetRef.current.position.y + 0.5,
-           duration: 1.5,
-           repeat: -1,
-           // goes up and down
-           yoyo: true,
-       })
-    });
+        if (!targetRef.current) return;
+
+        gsap.to(targetRef.current.position, {
+            y: targetRef.current.position.y + 0.5,
+            duration: 1.5,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut',
+        });
+    }, []);
 
     return (
-        // spreads out all the props
-        <mesh {... props} ref={targetRef} rotation={[0, Math.PI /5, 0]} scale={1.1}>
-            <primitive object={scene}/>
-        </mesh>
-    )
-}
-export default Target
+        <group {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.1}>
+            <mesh position={[0, -1.2, 0]}>
+                <cylinderGeometry args={[0.22, 0.26, 2.2, 32]} />
+                <meshStandardMaterial color="#8b96a8" metalness={0.55} roughness={0.35} />
+            </mesh>
+            <mesh position={[0, 0.35, 0]}>
+                <torusGeometry args={[0.8, 0.12, 24, 96]} />
+                <meshStandardMaterial color="#ef4444" metalness={0.2} roughness={0.5} />
+            </mesh>
+            <mesh position={[0, 0.35, 0]}>
+                <torusGeometry args={[0.45, 0.1, 24, 96]} />
+                <meshStandardMaterial color="#f8fafc" metalness={0.08} roughness={0.55} />
+            </mesh>
+            <mesh position={[0, 0.35, 0]}>
+                <circleGeometry args={[0.2, 48]} />
+                <meshStandardMaterial color="#ef4444" metalness={0.1} roughness={0.6} />
+            </mesh>
+        </group>
+    );
+};
+
+export default Target;

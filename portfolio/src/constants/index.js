@@ -59,9 +59,9 @@ export const clientReviews = [
 export const myProjects = [
     {
         title: 'Android-quiz-application',
-        desc: 'A mobile application for entertainment and testing the user\'s general knowledge.',
+        desc: 'Mobile application for entertainment and testing the user\'s general knowledge.',
         subdesc:
-            'This application contains multiple games and allows users to be ranked according to their achievements. Multilingualism is also supported so that the application can be adapted to as many users as possible.',
+            'This application contains multiple quiz games and allows users to be ranked according to their achievements. Handled network operations with Retrofit, Gson for JSON conversion and OkHttp as the network client. Multilingualism is supported so the application can be adapted to as many users as possible.',
         href: 'https://www.not_deployed',
         // i have to add my own video
         texture: '/textures/project/project1.mp4',
@@ -85,33 +85,11 @@ export const myProjects = [
         ],
     },
     {
-        title: 'BPS-FM-Mobile-App',
-        desc: 'Android internship project related to electricity consumption with graphs using Rest API and Kotlin. ',
-        subdesc:
-            'This application provides authentication for the users, as well as monthly information on : revenue, service requests, carbon savings, energy savingsand consumption.',
-        href: 'https://www.not_deployed',
-        // i have to add my own video
-        texture: '/textures/project/project2.mp4',
-        spotlight: '/assets/spotlight2.png',
-        tags: [
-            {
-                id: 1,
-                name: 'Kotlin',
-                path: '/assets/kotlin_logo.png',
-            },
-            {
-                id: 2,
-                name: 'MySQL',
-                path: '/assets/MySQL_logo.png',
-            },
-        ],
-    },
-    {
         title: 'PostInfoPortal',
-        desc: 'A cross-platform mobile news application built with React Native and Expo that provides access to posts from PostInfo.rs  using Wordpress REST API.',
+        desc: 'Cross-platform mobile news application built with React Native and Expo that provides access to posts from postinfo.rs using Wordpress REST API.',
         subdesc:
-            'It’s main features are:  filtering posts by categories/subcategories, offline caching, favorite posts logic, advanced search, advanced date filters, sorting, push notifications with OneSignal, sharing posts, light/dark themes, and a clean modern UI with Nativewind. Test version live, Play Store release in progress.',
-        href: 'https://www.not_deployed',
+            'Main features of the application are: filtering posts by categories/subcategories, offline caching, favourite posts, advanced search/date filters, sorting, push notifications with OneSignal, sharing posts, light/dark themes, stack navigation, deep linking and a clean modern UI with NativeWind. Test version live, Play Store release in progress.',
+        href: 'https://expo.dev/accounts/postinfo1/projects/PostInfoPortal/builds/c4e31a77-f1ef-4374-8753-cd05b278b250',
         // i have to add my own video
         texture: '/textures/project/project2.mp4',
         spotlight: '/assets/spotlight3.png',
@@ -144,10 +122,32 @@ export const myProjects = [
         ],
     },
     {
-        title: 'StarCardApp-Loyalty',
-        desc: 'A cross-platform digital loyalty card application built with React Native and Expo, integrated with a PHP backend via REST API.',
+        title: 'BPS-FM-Mobile-App',
+        desc: 'Android internship project related to electricity consumption with graphs using REST API and Kotlin. ',
         subdesc:
-            'The app allows the users to scan QR codes in restaurants or shops to collect points, unlock discounts and rewards, and store all their loyalty cards  in a digital wallet. Currently under development.',
+            'This application provides authentication for the users, as well as monthly information on : revenue, service requests, carbon savings, energy savingsand consumption.',
+        href: 'https://www.not_deployed',
+        // i have to add my own video
+        texture: '/textures/project/project2.mp4',
+        spotlight: '/assets/spotlight2.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Kotlin',
+                path: '/assets/kotlin_logo.png',
+            },
+            {
+                id: 2,
+                name: 'MySQL',
+                path: '/assets/MySQL_logo.png',
+            },
+        ],
+    },
+    {
+        title: 'StarCardApp-Loyalty',
+        desc: 'Cross-platform digital loyalty card application built with React Native and Expo.',
+        subdesc:
+            'Integration with PHP backend is handled through REST API requests. Application allows users to scan QR codes in restaurants or shops to collect points/stamps, unlock discounts and rewards, and store all their loyalty cards in a digital wallet. Currently under development.',
         href: 'https://www.not_deployed',
         // i have to add my own video
         texture: '/textures/project/project2.mp4',
@@ -299,18 +299,26 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'GoSmartDevelopment',
-        pos: 'Junior Mobile Developer',
-        duration: 'Mar 2025 - Present',
-        title: "...",
+        name: 'Isplis',
+        pos: 'Android Developer',
+        duration: 'Oct 2025 - Present (until Apr 2026)',
+        title: "Led migration of DeliveryGo Android application from XML layouts to Jetpack Compose (Kotlin). Implemented state management with: Flow, StateFlow, SharedFlow and LiveData. Improved my knowledge of MVVM and MVI patterns and strengthened my understanding of Kotlin coroutines (flows, scopes, dispatchers). Contributed in building Whatsapp-style media editor library. There I learned how matrices work, implemented cropping, media rotation, adding text on media, emoji/sticker feature, while primarily focusing on writing clean and maintainable code.",
         animation: 'clapping',
     },
     {
         id: 2,
+        name: 'Go Smart Development',
+        pos: 'Junior Mobile Developer',
+        duration: 'Mar 2025 - Oct 2025',
+        title: "Maintained an android application for electric vehicle chargers. Led development of cross-platform mobile applications using React Native (Expo) with TypeScript/JavaScript. Used WordPress REST API to fetch data for the mobile application while properly authenticating all incoming requests and reduced initial data load times with pagination. Implemented features including OneSignal push notifications, offline caching, stack navigation, advanced search/sort/filter, deep linking. ",
+        animation: 'clapping',
+    },
+    {
+        id: 3,
         name: 'Sotex Solutions',
         pos: 'Internship Android Developer',
         duration: 'Sep 2023 - Nov 2023',
-        title: "Worked onan android internship project related to electricity consumption with graphs using Rest API and Kotlin.",
+        title: "Worked on an android internship project related to electricity consumption with graphs using Rest API and Kotlin.",
         animation: 'victory',
     },
 ];

@@ -22,7 +22,7 @@ const Hero = () => {
 
     return (
         <section className="min-h-screen w-full flex flex-col relative" id="home">
-            <div className="w-full mx-auto flex flex-col sm:mt-36
+            <div className="relative z-10 w-full mx-auto flex flex-col sm:mt-36
             mt-20 c-space gap-3">
                 <p className="sm:text-3xl text-2xl
                 font-medium text-white text-center font-generalsans">Hi, I'm Dejan
@@ -30,9 +30,9 @@ const Hero = () => {
                 <p className="hero_tag text-gray_gradient">Building Mobile Applications</p>
             </div>
 
-            <div className="w-full h-full absolute inset-0">
+            <div className="w-full h-full absolute inset-0 z-0">
                 {/*<Leva/>*/}
-                <Canvas className="w-full h-full">
+                <Canvas className="w-full h-full" gl={{ alpha: true }} style={{ background: 'transparent' }}>
                     <Suspense fallback={<CanvasLoader/>}>
                     {/*a camera like a human eye*/}
                     <PerspectiveCamera makeDefault position={[0, 0, 20]}/>

@@ -32,22 +32,23 @@ const About = () => {
                                 {/*should be changed*/}
                                 I am a mobile-focused developer with a strong passion for coding, specializing in
                                 building clean, user-friendly interfaces and maintainable applications.
+                                Eager to continuously learn, embrace new challenges, and contribute to innovative projects
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        {/*i need to change the image and add mine*/}
                         <img src="/assets/languages.png" alt="languages"
                              className="w-full sm:h-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
-                            {/*should be changed probably*/}
                             <p className="grid-subtext">I specialize in
-                                React Native, Flutter, and native Android development using Kotlin and Java. While
-                                my primary focus is mobile, I also have some experience in web development and
-                                can confidently take on full-stack projects.</p>
+                            native Android development using Kotlin (with Jetpack Compose or XML) and Java, 
+                            React Native/Flutter for cross-platform development. While my primary focus is mobile, 
+                            I also have some experience in web development and can confidently take on full-stack projects, 
+                            handling both frontend and backend, along with database design and integration. 
+                            </p>
                         </div>
                     </div>
                 </div>
