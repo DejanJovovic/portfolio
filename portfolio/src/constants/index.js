@@ -88,8 +88,8 @@ export const myProjects = [
         title: 'PostInfoPortal',
         desc: 'Cross-platform mobile news application built with React Native and Expo that provides access to posts from postinfo.rs using Wordpress REST API.',
         subdesc:
-            'Main features of the application are: filtering posts by categories/subcategories, offline caching, favourite posts, advanced search/date filters, sorting, push notifications with OneSignal, sharing posts, light/dark themes, stack navigation, deep linking and a clean modern UI with NativeWind. Test version live, Play Store release in progress.',
-        href: 'https://expo.dev/accounts/postinfo1/projects/PostInfoPortal/builds/c4e31a77-f1ef-4374-8753-cd05b278b250',
+            'Main features of the application are: filtering posts by categories/subcategories, offline caching, favourite posts, advanced search/date filters, sorting, push notifications with OneSignal, sharing posts, light/dark themes, stack navigation, deep linking and a clean modern UI with NativeWind. Officially published on Google Playstore. Test iOS version live.',
+        href: 'https://play.google.com/store/apps/details?id=com.gosmartdevelopment.postinfoportal',
         // i have to add my own video
         texture: '/textures/project/project2.mp4',
         spotlight: '/assets/spotlight3.png',
